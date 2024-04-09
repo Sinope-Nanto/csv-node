@@ -1,0 +1,18 @@
+Version:       00000001
+key_id:        00007ffd0162fd94
+certifying_id: 00007ffd0162fda4
+key_usage: KEY_USAGE_TYPE_HSK
+
+Pubkey:        
+Curve: CURVE_ID_TYPE_SM2_256
+Qx:            
+A4 0E 2A BB 74 A2 79 DD 62 7A 92 7E 44 E3 98 17 ED C6 7B 6A B2 31 FA 9B 37 38 55 62 F7 50 B1 BF 
+Qy:            
+F8 61 9B C7 A3 F4 09 97 56 29 98 80 FA A7 EC 02 0C 56 F6 22 50 AF 3B 5F 6A B0 6C FC 57 98 89 E7 
+Userid:        HYGON-SSD-HSK 
+
+Sig:           
+R:             
+EF 20 5D 37 EA 26 7C B6 20 EC 74 32 8E A8 DB FF 89 34 FF C0 9C 9B 45 64 9A B9 75 A3 53 D8 C8 E6 
+S:             
+BF 0C BB F9 1C 64 F4 A1 43 41 62 DF B5 18 D6 F9 5C F6 48 81 31 1E 1A E0 0D D8 19 E8 A4 75 F7 08 

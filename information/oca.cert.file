@@ -1,0 +1,29 @@
+Version:       00000001
+api_major:     01
+api_minor:     02
+pub_key_usage: KEY_USAGE_TYPE_OCA
+pub_key_algo: SIG_ALGO_TYPE_SM2_SA
+
+Pubkey:        
+Curve: CURVE_ID_TYPE_SM2_256
+Qx:            
+BF 48 72 11 E2 72 03 6B D4 C2 A5 EA 6C 1C 22 6C 64 A5 3A E0 DD C7 2D 8A 2D 8A B7 5C C9 8D 6B BD 
+Qy:            
+5F 81 AF C8 07 71 2D 7F BB 5C 5B CA C2 63 6F 47 E5 17 7B 01 C5 3B 54 C4 CF 1F 58 7A 12 16 D5 AD 
+Userid:        HYGON-SSD-OCA 
+
+sig_1_usage: KEY_USAGE_TYPE_OCA 
+sig_1_algo: SIG_ALGO_TYPE_SM2_SA 
+Sig1:          
+R:             
+CC DD 65 33 09 6E 99 E2 27 36 EF 04 7F 8D 72 88 6F 39 77 D2 7B A2 B1 18 25 3C 78 D3 1D 58 C3 D6 
+S:             
+B7 40 40 59 FD 3F 96 2C 09 C3 AE BC DA 4C 38 85 87 A9 4A 1E 28 73 B5 A8 DB D0 73 BF 0A AA A4 D1 
+
+sig_2_usage:KEY_USAGE_TYPE_INVALID 
+sig_2_algo:SIG_ALGO_INVALID  
+Sig2:          
+R:             
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+S:             
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 

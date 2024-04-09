@@ -1,0 +1,49 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: csvnode-ra
+  name: csvnode-ra
+  annotations:
+   # io.katacontainers.config_path: "/home/tcwg/vonsky/Hygon-Arch/YAML/configuration-qemu-csv-normalmem.toml"
+    io.katacontainers.config_path: "/home/tcwg/workspace-mhz/CSVAttestation/configuration-qemu-csv-normalmem.toml"
+spec:
+  containers:
+  - image: tcwgregistry.local/myubuntu:v1.0
+    name: csvnode-ra
+    imagePullPolicy: Always
+    command: ["/bin/bash","-c"]
+    args:
+      - |
+        cd /root/attestation/
+        sleep infinity
+    ports:
+      - containerPort: 32015
+    volumeMounts:
+    - mountPath: /root/attestation
+      name: attestation
+    - mountPath: /dev
+      name: dev
+  volumes:
+  - name: attestation
+    hostPath:
+      path: /home/tcwg/workspace-mhz/csv-node
+  - name: dev
+    hostPath:
+      path: /dev
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+  runtimeClassName: kata-qemu-csv
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ra-service
+spec:
+  selector:
+    run: csvnode-ra
+  type: NodePort
+  ports:
+  - port: 32015
+    nodePort: 32015

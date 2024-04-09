@@ -1,0 +1,18 @@
+Version:       00000001
+key_id:        00007ffcf7f43164
+certifying_id: 00007ffcf7f43174
+key_usage: KEY_USAGE_TYPE_HRK
+
+Pubkey:        
+Curve: CURVE_ID_TYPE_SM2_256
+Qx:            
+2D F6 C2 92 1D F2 F5 2A 50 1F CD 85 E7 35 09 C8 75 3A 56 09 DB 02 D7 F3 4C F1 A4 62 4D E1 62 BE 
+Qy:            
+46 B9 1E B4 68 4D 74 38 47 88 BE B9 10 0C 64 4A 38 95 4E 16 97 8B 4F 58 15 70 BB 57 3A 12 AB 3B 
+Userid:        HYGON-SSD-HRK 
+
+Sig:           
+R:             
+29 65 FF EE 8C E0 48 A0 CB 8E 0B 3B E6 CE B7 58 09 94 33 62 8D F7 E6 08 47 C8 BE 40 A4 DA B6 B1 
+S:             
+50 D7 6B E3 4F BB 2B 85 7C 56 A3 51 F3 23 D5 81 AB 54 25 49 C6 A1 C9 B5 46 D3 79 8E DE 21 43 8E 

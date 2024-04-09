@@ -1,0 +1,29 @@
+Version:       00000001
+api_major:     01
+api_minor:     02
+pub_key_usage: KEY_USAGE_TYPE_PEK
+pub_key_algo: SIG_ALGO_TYPE_SM2_SA
+
+Pubkey:        
+Curve: CURVE_ID_TYPE_SM2_256
+Qx:            
+52 50 A6 96 1C 5C E8 F3 E5 CE 91 3A 88 DB 1B 0B C3 5F CD 60 25 8D A6 AE AC 61 A9 DD 52 6C DE F9 
+Qy:            
+DD 47 42 C4 B1 2B 83 34 B9 D7 57 0E 45 7E FB 35 99 11 E5 DD F2 EA 24 B1 C6 34 19 54 24 52 04 E2 
+Userid:        HYGON-SSD-PEK 
+
+sig_1_usage: KEY_USAGE_TYPE_CEK 
+sig_1_algo: SIG_ALGO_TYPE_SM2_SA 
+Sig1:          
+R:             
+0E 53 22 CB 3D F3 61 02 EC BE 7D E2 97 C6 71 14 96 4F F0 92 9D 34 D5 4A 40 61 24 AF 5F 60 52 7E 
+S:             
+1E 00 25 C4 D1 CD A6 7C 2A C3 4C 42 3C 51 9C D2 FF 67 A1 41 42 4B FC 44 45 8A 52 CD 39 EF 3D F6 
+
+sig_2_usage:KEY_USAGE_TYPE_OCA 
+sig_2_algo:SIG_ALGO_TYPE_SM2_SA  
+Sig2:          
+R:             
+A4 D5 17 3F 07 C9 A5 75 A9 98 3A E5 65 E7 DD 98 DA 42 63 3D 87 26 F9 C6 84 F9 00 C2 D7 9C FF B4 
+S:             
+B8 5E 46 49 C7 70 A3 84 69 61 F9 61 28 DD CF 40 40 85 4C 80 3B F6 50 F1 E9 FF D1 A8 23 D6 14 4D 
