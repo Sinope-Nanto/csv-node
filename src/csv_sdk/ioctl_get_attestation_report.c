@@ -93,9 +93,9 @@ static int get_attestation_report(struct csv_attestation_report *report, uint8_t
         GUEST_ATTESTATION_DATA_SIZE + GUEST_ATTESTATION_NONCE_SIZE,
         (unsigned char *)&user_data->hash);
 
-    csv_data_dump("data", user_data->data, GUEST_ATTESTATION_DATA_SIZE);
-    csv_data_dump("mnonce", user_data->mnonce, GUEST_ATTESTATION_NONCE_SIZE);
-    csv_data_dump("hash", (unsigned char *)&user_data->hash, sizeof(hash_block_u));
+    // csv_data_dump("data", user_data->data, GUEST_ATTESTATION_DATA_SIZE);
+    // csv_data_dump("mnonce", user_data->mnonce, GUEST_ATTESTATION_NONCE_SIZE);
+    // csv_data_dump("hash", (unsigned char *)&user_data->hash, sizeof(hash_block_u));
     // printf("data: %s\n", user_data->data);
 
     fd = open("/dev/csv-guest",O_RDWR);
@@ -139,7 +139,7 @@ static int compute_session_mac_and_verify(struct csv_attestation_report *report)
              g_mnonce, GUEST_ATTESTATION_NONCE_SIZE,(unsigned char*)(hmac.block));
 
     if(memcmp(hmac.block, report->mac.block, sizeof(report->mac.block)) == 0){
-        printf("mac verify success\n");
+        // printf("mac verify success\n");
         return 0;
     }else{
         printf("mac verify failed\n");

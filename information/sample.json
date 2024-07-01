@@ -1,0 +1,45 @@
+{
+    "ak_pubkey":{
+        "x_point":"ADF57182F0ECF0A75717A42F34A1B50BC92FD147E0FD77B9FB75F346F74E286A",
+        "x_size":64,
+        "y_point":"3179165ACD23F3E616CB34B1EA2623147FDB4E806B7FF460068E26ABF3E1EF5A",
+        "y_size":64
+    },
+    "data":{
+        "cek_cert":"...",
+        "cek_cert_size":3278,
+        "hrk_cert":"...",
+        "hrk_cert_size":3354,
+        "hsk_cert":"...",
+        "hsk_cert_size":3354,
+        "pdh_cert":"...",
+        "pdh_cert_size":3354,
+        "pek_cert":"...",
+        "pek_cert_size":3278,
+        "chip_id" : "H008C0020022204",
+        "tcb_info":{
+            "api_major": "1",
+            "api_minor": "2",
+            "platform_state": "CSV_STATE_WORKING",
+            "owner": "PLATFORM_STATE_SELF_OWN",
+            "chip_secure": "SECURE",
+            "fw_enc": "ENCRYPTED",
+            "fw_sign": "SIGNED",
+            "es": "CSV ES",
+            "build_id": "1616",
+            "guest_count": "4",
+            "is_hgsc_imported": "YES",
+            "supported_csv_guest": "11"
+        }
+    },
+    "area":"CN",
+    "devinfo":"Hygon C86 7291 32-core Processor",
+    "host":"tcwg-csv",
+    "httpd_port":32015,
+    "ip":"192.168.4.64",
+    "mac":"52:54:00:12:34:56",
+    "manufacture":"Hygon",
+    "name":"CXYH051019",
+    "os":"Linux version 5.10.84-csv",
+    "type":4
+}

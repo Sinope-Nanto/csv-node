@@ -4,6 +4,7 @@
 开启CSVNode机密容器：start_csvnode.sh
 关闭CSVNode机密容器：stop_csvnode.sh
 
+export KUBECONFIG=/etc/kubernetes/admin.conf
 查看Pod机密容器是否开启：kubectl get pods
 能看到csvnode-ra在Running
 
@@ -24,4 +25,3 @@ INCDIR = /opt/gmssl/include/
 编写验证库时，里面函数会自动从CSV官网下载证书，可以禁用掉，使用本地已经下载下来的
 注意openssl与gmssl的冲突
 注意在映射的路径中编写代码和保留长存数据，不然机密容器代码实例关闭后，修改会丢失（内存中没有落盘），映射进去的路径是落盘的
-

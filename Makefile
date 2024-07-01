@@ -5,7 +5,7 @@ GM_INCDIR = /opt/gmssl/include/
 # openssl path
 OPENSSL_LIBDIR = lib/
 
-# all: static_csv_sdk csv_httpd
+all: static_csv_sdk get_report csv_httpd
 
 CURL_CFLAGS := -I$(GM_INCDIR) \
           -L$(GM_LIBDIR)
@@ -23,7 +23,11 @@ static_csv_sdk:
 	rm *.o
 
 csv_httpd:
-	gcc -o bin/csv_httpd src/*.cpp -lhv_static -L. lib/libssl.a -L. lib/libcrypto.a -lstdc++ -lpthread -Wl,-rpath,-Bstatic -ldl
+	g++ -o bin/csv_httpd src/*.cpp -lhv_static -L. lib/libssl.a -L. lib/libcrypto.a -lstdc++ -lpthread -Wl,-rpath,-Bstatic -ldl
 
-csv_curl: static_csv_sdk
-	gcc -Wall $(CURL_CFLAGS) -o bin/csv_curl src/*.c -L. lib/libcsv.a $(CURL_STATIC_CFLAGS) -lcrypto $(CURL_SHARED_CFLAGS) -lstdc++ -ldl
+get_report: static_csv_sdk 
+	gcc -Wall $(CURL_CFLAGS) -o bin/get_report src/*.c -L. lib/libcsv.a $(CURL_STATIC_CFLAGS) -lcrypto $(CURL_SHARED_CFLAGS) -lpthread -Wl,-rpath,-Bstatic -ldl
+
+.PHONY: clean
+clean:
+	rm -f bin/*

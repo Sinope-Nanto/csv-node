@@ -182,7 +182,7 @@ int csv_do_verify(char* report_hex, char* pub_x_hex, char* pub_y_hex, char* usr_
     uint8_t* pub_y = hex2bin(pub_y_hex, &pub_y_len);
     uint8_t* usr_id = hex2bin(usr_id_hex, &usr_id_len);
     uint8_t* random_number = hex2bin(random_number_hex, &random_number_len);
-    uint8_t* report_rn;
+    uint8_t* report_rn = NULL;
     int i = 0;
 
     if(!(pub_x_len == CSV_PUBKEY_LENGTH &&
